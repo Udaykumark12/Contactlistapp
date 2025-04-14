@@ -86,6 +86,13 @@ class TestLoginContactApp:
             assert response.status_code == 200, "Failed to delete user"
 
 
+def test_delete_user(self):
+    response = Loginhelpers().delete_user_details()
+    if response:
+        assert response.status_code == 200, "Failed to delete user"
+
+
+
 
 
 
