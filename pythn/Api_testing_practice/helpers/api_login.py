@@ -18,36 +18,36 @@ class Loginhelpers:
         return response
 
 
-    # def get_contact_app_details(self,id):
-    #     self.url=self.url+'/{}'.format(id)
-    #     resp=requests.get(self.url, headers=self.headers)
-    #     print(resp.text)
-    #     return resp
+    def get_contact_app_details(self,id):
+        self.url=self.url+'/{}'.format(id)
+        resp=requests.get(self.url, headers=self.headers)
+        print(resp.text)
+        return resp
 
 
-    # def create_user(self,payload):
+    def create_user(self,payload):
 
-    #     id=self.get_usesr_id("John")
-    #     response = requests.post(self.url,json=payload,headers=self.headers)
-    #     print(response.text)
-    #     return response
+        id=self.get_usesr_id("John")
+        response = requests.post(self.url,json=payload,headers=self.headers)
+        print(response.text)
+        return response
 
 
-    # def update_user_details(self,payload):
-    #     id=self.get_user_id("k uday")
-    #
-    #     self.url = self.url + '/{}'.format(id)
-    #     response = requests.put(self.url,json=payload,headers=self.headers)
-    #     print(response.text)
-    #     return response
+    def update_user_details(self,payload):
+        id=self.get_user_id("k uday")
+    
+        self.url = self.url + '/{}'.format(id)
+        response = requests.put(self.url,json=payload,headers=self.headers)
+        print(response.text)
+        return response
 
-    # def update_user_name_with_patch(self,payload):
-    #     id = self.get_user_id("k uday")
-    #
-    #     self.url = self.url + '/{}'.format(id)
-    #     response = requests.patch(self.url,json=payload,headers=self.headers)
-    #     print(response.text)
-    #     return response
+    def update_user_name_with_patch(self,payload):
+        id = self.get_user_id("k uday")
+    
+        self.url = self.url + '/{}'.format(id)
+        response = requests.patch(self.url,json=payload,headers=self.headers)
+        print(response.text)
+        return response
 
     def delete_user_details(self):
         id = self.get_user_id('Nirmal')
