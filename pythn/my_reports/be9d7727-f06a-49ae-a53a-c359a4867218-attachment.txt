@@ -1,0 +1,10 @@
+Error displayed
+First Name must be between 1 and 32 characters!
+Error displayed
+Last Name must be between 1 and 32 characters!
+Error displayed
+E-Mail Address does not appear to be valid!
+Error displayed
+Telephone must be between 3 and 32 characters!
+Error displayed
+Password must be between 4 and 20 characters!
