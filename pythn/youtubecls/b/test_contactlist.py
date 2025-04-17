@@ -1,4 +1,6 @@
-from youtubecls.a.contactlist import Main_class
+from youtubecls.a
+
+
 
 
 class TestLoginContactApp:
@@ -31,13 +33,13 @@ class TestLoginContactApp:
         resp=resp.json()
         print(resp)
 
-    # def test_post_data(self):
-    #     resp = self.log.post_data(self.data)
-    #     assert resp.status_code==201,"no status code"
-    #
-    #     resp = self.log.all_alldata()
-    #     resp = resp.json()
-    #     print(resp)
+    def test_post_data(self):
+        resp = self.log.post_data(self.data)
+        assert resp.status_code==201,"no status code"
+
+        resp = self.log.all_alldata()
+        resp = resp.json()
+        print(resp)
 
 
     # def test_patch_data(self):

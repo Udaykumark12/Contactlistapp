@@ -39,17 +39,28 @@
 # for i in a:
 #     if a[i] == 1 or a[i] == 3:
 #         b.append(a[i])
-# print(b)
+# print("b is",b)
 # for i in a:
 #     if i =="a" or i=="b":
 #         print("a is {}".format(i))
-# #
+#
 # for i in a:
 #     if a[i] == 2 or a[i] == 4:
 #         c.append(a[i])
 #
 # print(b)
 # print(c)
+
+#
+# a = {"a": 1, "b": 2, "c": 3, "d": 4}
+# b=[]
+# c=[]
+# for i in a:
+#     print("{}:{}".format(i,a[i]))
+#     if a[i]==1:
+#         b.append(a[i])
+# print(b)
+
 
 # a = "hello world"
 # b = "pythonpratice program"
@@ -58,14 +69,14 @@
 #     if i in b:
 #         print(i)
 #
-a = "uday"
-b = "udayuudayday"
-c=[]
-for i in a:
-    if i in b and b.count(i)>1:
-        # print(i)
-        c.append(i)
-print(c)
+# a = "uday"
+# b = "udayuudayday"
+# c=[]
+# for i in a:
+#     if i in b and b.count(i)>1:
+#         # print(i)
+#         c.append(i)
+# print(c)
 
 # a=5
 # b=2
