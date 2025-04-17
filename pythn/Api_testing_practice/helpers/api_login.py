@@ -35,6 +35,7 @@ class Loginhelpers:
 
     def update_user_details(self,payload):
         id=self.get_user_id("k uday")
+<<<<<<< HEAD
 
         self.url = self.url + '/{}'.format(id)
         response = requests.put(self.url,json=payload,headers=self.headers)
@@ -44,6 +45,17 @@ class Loginhelpers:
     def update_user_name_with_patch(self,payload):
         id = self.get_user_id("k uday")
 
+=======
+    
+        self.url = self.url + '/{}'.format(id)
+        response = requests.put(self.url,json=payload,headers=self.headers)
+        print(response.text)
+        return response
+
+    def update_user_name_with_patch(self,payload):
+        id = self.get_user_id("k uday")
+    
+>>>>>>> 3ca1467974f577f039a335af12516aef3ea1e485
         self.url = self.url + '/{}'.format(id)
         response = requests.patch(self.url,json=payload,headers=self.headers)
         print(response.text)
