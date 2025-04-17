@@ -21,22 +21,17 @@ class Main_class:
     #     resp = requests.patch(self.url, headers=self.headers, json=data)
     #     return resp
 
-
     def delete_data(self):
         id = self.id_generator('nirmal')
-        self.url = self.url + '/{}'.format(id)
-        resp = requests.delete(self.url, headers=self.headers)
+        url = self.url + '/{}'.format(id)
+        resp = requests.delete(url, headers=self.headers)
         return resp
 
     def check_deletedornot(self):
-        self.delete_data()
-        self.url = self.url + '/{}'.format(self.id)
-        resp = requests.get(self.url, headers=self.headers)
+        id = self.id_generator('nirmal')
+        url = self.url + '/{}'.format(id)
+        resp = requests.get(url, headers=self.headers)
         return resp
-
-
-
-
 
     def id_generator(self, name):
         resp = self.all_alldata()
